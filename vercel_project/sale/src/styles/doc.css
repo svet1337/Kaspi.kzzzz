@@ -1,0 +1,134 @@
+.doc-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    height: auto; 
+    position: absolute;
+    height: 65vh;
+    transform-origin: center;
+    will-change: transform;
+    animation: remove 0.2s linear;
+  }
+
+  @keyframes remove {
+    from {
+      transform: translateX(-100%);
+    }
+
+    to {
+      transform: translateX(0%);
+    }
+  }
+
+.doc-image {
+    position: relative; 
+    width: 85%; 
+    border-radius: 20px;
+}
+
+.doc-img-front {
+    display: block;
+    width: 100%;
+    height: auto;
+    white-space: nowrap;
+    object-fit: contain; 
+}
+  
+  .text-position {
+    position: absolute;
+    color: black; 
+    font-size: 2.3vw;
+    font-kerning: none;
+    -webkit-font-smoothing: antialiased;
+    transform: scaleY(1.1);
+    letter-spacing: -0.1vw;
+  }
+  
+  .doc-sur{
+    top: 15.3%; 
+    left: 37.7%; 
+  }
+  
+  .doc-name {
+    top: 22%;
+    left: 37.7%;
+  }
+  
+  .patronymic {
+    top: 28.9%; 
+    left: 37.7%;
+  }
+  
+  .doc-burn-date {
+    top: 35.3%;
+    left: 37.9%
+  }
+  
+  .doc-iin {
+    font-size: 2.7vw;
+    top: 41.9%;
+    left: 14%;
+  }
+
+  .doc-city {
+    top: 57.5%;
+    left: 28.5%;
+  }
+
+  .doc-nation {
+    top: 62.5%;
+    left: 28.5%;
+  }
+
+  .doc-gets {
+    top: 67.2%;
+    left: 28.5%;
+  }
+  
+  .doc-number {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    top: 51%;
+    left: 76%;
+  }
+
+  .doc-term {
+    top: 71.2%;
+    left: 28.5%;
+    font-size: 2.67vw;
+  }
+
+  .doc-name-sur {
+    top: 83.8%;
+    left: 7%;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 71vw;
+    letter-spacing: -0.03vw;
+  }
+
+  .doc-simb-up {
+    top: 80.5%;
+    left:7%;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 71vw;
+  }  
+  
+  .doc-simb-down {
+    top: 87.2%;
+    left:7%;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 71vw;
+  }  
+  
+
+  .doc-icon {
+    top: 13.2%;
+    left: 4.3%;
+    width: 25vw;
+    height: 32vw;
+    transform: scaleY(1);
+  }

@@ -1,0 +1,123 @@
+#loadingg {
+    display: block;
+}
+
+#qrrr {
+    display: block;
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 100%, 0.548);
+    position: absolute;
+    display: flex;
+    z-index: 10;
+}
+
+.loading-img {
+    display: flex;
+    position: absolute;
+    scale: 0.07;
+    top: 15%;
+    left: -16%;
+    filter: brightness(0) saturate(100%) invert(12%) sepia(95%) saturate(5000%) hue-rotate(-10deg);
+    animation: loading-img 0.5s linear infinite;
+}
+
+@keyframes loading-img {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.qr-container {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.527);
+    z-index: 11;
+}
+
+
+.qrik {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 45vh;
+    background-color: white;
+    border-radius: 25px 25px 0px 0px;
+    animation: qrik 0.2s ease;
+    z-index: 12;
+}
+
+@keyframes qrik {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+.qrik-udo {
+    position: absolute;
+    font-size: 2vh;
+    letter-spacing: -0.4px;
+    font-weight: bold;
+    top: 7%;
+    left: 3%;
+    transform: scaleY(1.035);
+}
+
+.qrik-x {
+    position: absolute;
+    font-size: 1.4em;
+    transform: scaleX(1.2);
+    top: 7%;
+    left: 91%;
+    color: rgb(70, 70, 70);
+}
+
+.qrik-show {
+    position: absolute;
+    font-size: 0.9em;
+    white-space: nowrap;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qrik-shos {
+    position: absolute;
+    font-size: 0.9em;
+    white-space: nowrap;
+    top: 73%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qrik-fake {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 125px;
+}
+
+.qrik-code {
+    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    top: 79%;
+    left: 43.5%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    transform: scale(1.5);
+}

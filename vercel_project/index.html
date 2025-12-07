@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Private site</title>
+  <style>
+    body{font-family:Arial,Helvetica,sans-serif;background:#0d1117;color:#e6edf3;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+    .card{background:#0f1720;padding:28px;border-radius:10px;box-shadow:0 6px 24px rgba(2,6,23,0.6);width:320px}
+    h2{text-align:center;margin:0 0 14px}
+    input{width:100%;padding:10px;margin:8px 0;border-radius:6px;border:1px solid #233040;background:#071122;color:#e6edf3}
+    button{width:100%;padding:10px;border-radius:6px;border:none;background:#238636;color:white;font-weight:600;cursor:pointer}
+    .small{font-size:13px;color:#9fb0c7;margin-top:8px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Приватный вход</h2>
+    <input id="user" placeholder="Логин" autocomplete="username" />
+    <input id="pass" type="password" placeholder="Пароль" autocomplete="current-password" />
+    <button id="btn">Войти</button>
+    <p class="small">Доступ получают только пользователи, добавленные в базу.</p>
+    <p id="msg" style="color:#ffb4b4;text-align:center"></p>
+  </div>
+
+<script>
+document.getElementById('btn').addEventListener('click', login);
+async function login(){
+  const username = document.getElementById('user').value.trim();
+  const password = document.getElementById('pass').value;
+  document.getElementById('msg').textContent = '';
+  if(!username || !password){ document.getElementById('msg').textContent = 'Заполните все поля'; return; }
+  try{
+    const res = await fetch('/api/login', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ username, password })
+    });
+    const data = await res.json();
+    if(res.ok && data.success){
+      window.location.href = '/protected.html';
+    } else {
+      document.getElementById('msg').textContent = data.message || 'Неверный логин или пароль';
+    }
+  }catch(e){
+    document.getElementById('msg').textContent = 'Ошибка сети';
+  }
+}
+</script>
+</body>
+</html>

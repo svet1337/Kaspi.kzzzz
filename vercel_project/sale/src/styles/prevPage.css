@@ -1,0 +1,330 @@
+.prevPage {
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgb(245, 245, 245);
+    animation: prevPage 0.2s linear;
+    overflow-y: visible;
+}
+
+@keyframes prevPage {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.switch-container-2 {
+    position: -webkit-sticky; 
+    position: sticky;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    top: 0;
+    overflow: hidden;
+    flex-direction: column;
+    height: 6vh;
+    transition: transform 0.3 ease-in-out;
+    touch-action: none;
+    animation: remove 0.2s linear;
+}
+
+.prev-top {
+    background-color: white;
+    height: 25vh;
+    padding-bottom: 15px;
+    border-radius: 0px 0px 15px 15px;
+    justify-content: center;
+    animation: remove 0.2s linear;
+}
+
+.prev-search {
+    display: flex;
+    margin-left: 4%;
+    margin-top: 1.4vh;
+    border-radius: 10px;
+    width: 92%;
+    height: 5vh;
+    background-color: rgb(245, 245, 245);
+}
+
+.prev-search-bar-icon {
+    scale: 1.3;
+    margin-left: 2%;
+    filter:contrast(0%) saturate(0%);
+}
+
+.prev-search-bar-input {
+    width: 100%;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(245, 245, 245);
+}
+
+.prev-search-bar-input::placeholder {
+    color: rgb(180, 180, 180);
+    letter-spacing: 0.3px;
+    font-size: 1.2em;
+}
+
+.online-docs {
+    background-color: white;
+    margin-top: 2vh;
+    width: 100vw;
+    height: 25vh;
+    border-radius: 15px 15px 15px 15px;
+    animation: remove 0.2s linear;
+}
+
+.online-scans {
+    display: inline-flex;
+    width: 100%;
+    height: 80%;
+}
+
+.online-card {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: 75%;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+}
+
+.online-all {
+    width: 100%;
+    height: 8%;
+    display: inline-flex;
+    justify-content: space-between;
+    color: rgb(0, 89, 206);
+    align-items: center;
+}
+
+.online-udo {
+    margin-top: 1.4vh;
+    margin-left: 1.4vh;
+    width: 45%;
+    height: 35%;
+    border-radius: 5px;
+}
+
+.online-udo-text {
+    letter-spacing: 0.1px;
+    margin-left: 1.4vh;
+    font-size: 0.7em;
+    transform: scaleY(1.05);
+}
+
+.online-all p {
+    margin-left: 2.4vh;
+    font-size: 0.8em;
+}
+
+.online-all-img {
+    
+    height: 15px;
+    transform: translateX(-20px) rotate(180deg);
+    filter: hue-rotate(230deg);
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.main-list {
+    flex-grow: 1;
+    padding: 10px;
+    margin-top: 2vh;
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    animation: remove 0.2s linear;
+}
+
+.doc-list {
+    width: 100%;
+    margin-top: 1vh;
+}
+
+.doc-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.doc-item p {
+}
+
+.photos {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 10px;
+    margin-top: -10px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: rgb(245, 245, 245);
+}
+
+.spr {
+    filter: saturate(90%);
+}
+
+.house {
+    filter: saturate(90%);
+}
+
+.pos {
+    filter: saturate(90%);
+}
+
+.car {
+    filter: saturate(130%);
+}
+
+.arrow-img {
+    margin-left: auto;
+    width: 13px;
+    height: 13px;
+    filter: contrast(0);
+    transform: rotate(180deg);
+}
+
+.blyat {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.s {
+    margin-top: 0;
+    font-size: 0.8em;
+}
+
+.s-name {
+    transform: scaleX(0.9);
+}
+
+.s-desc {
+    margin-top: -1.5vh;
+    transform: scaleX(0.9);
+    color: #7a7a7a;
+    font-size: 0.6em;
+}
+
+.goss {
+    letter-spacing: 0.4px;
+}
+
+.loadEgov {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    animation: showUdo 0.4s ease;
+}
+
+.egov-cont {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 50%;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-loading-bar {
+    position: absolute;
+    width: 0vw;
+    height: 3px;
+    top: 0;
+    left: 0;
+    background-color: red;
+    animation: red-loading 1s ease-in-out;
+}
+
+@keyframes red-loading {
+    0% {
+        width: 0vw;
+    }
+    80% {
+        width: 80vw;
+    }
+    100% {
+        opacity: 0;
+        width: 100vw;
+    }
+}
+
+.loadEgov-exit {
+    font-size: 2em;
+    opacity: 0;
+    color: rgb(100, 100, 100);
+    right: 2vw;
+    top: -2vh;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: exit 1s ease-in-out;
+}
+
+@keyframes exit {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+.egov-img {
+    height: auto;
+    width: 100px;
+}
+
+.kaspi-cont {
+    display: flex;
+    height: cover;
+    width: cover;
+    border-radius: 50%;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadEgov-mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 95vh;
+    gap: 20px;
+}
+
+.loadEgov-plus {
+    color: rgb(170, 170, 170);
+    font-size: 1.5em;
+    position: relative;
+}
+
+.kaspi-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: cover;
+}

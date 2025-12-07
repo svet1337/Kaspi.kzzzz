@@ -1,0 +1,84 @@
+:root {
+    --blue: #175fbd;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    width: 100%;
+    height: 23vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-one {
+    animation: show 0.2s linear;
+}
+
+#footer-two {
+    animation: remove 0.2s linear;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+    height: 6.5vh;
+    width: 90%;
+    margin-top: 3%;
+    background-color: white;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    font-size: 3.5vw;
+}
+
+.pred-doc {
+    background-color: var(--blue);
+    color: white;
+}
+
+.otpr-doc {
+    color: var(--blue);
+}
+
+.footer-btn-req {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4em;
+    width: 90%;
+    margin-top: 3%;
+    background-color: white;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    font-size: 3.5vw;
+}
+
+
+.pred-doc-req {
+    opacity: 0;
+    background-color: var(--blue);
+    color: white;
+}
+
+.otpr-doc-req {
+    color: var(--blue);
+}
+
+.footer-qr-image {
+    position: relative;
+    margin-right: 7px;
+    height: 7vw;
+}
+
+.footer-share-image {
+    position: relative;
+    filter: invert(30%) sepia(69%) saturate(1572%) hue-rotate(201deg) brightness(97%) contrast(101%);
+    margin-right: 1px;
+    height: 7vw;
+}

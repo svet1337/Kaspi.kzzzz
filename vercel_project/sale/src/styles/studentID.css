@@ -1,0 +1,88 @@
+.studentID {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    transform-origin: center;
+    will-change: transform;
+}
+
+.studentID-doc {
+}
+
+.studentImg {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 90%;
+    height: 70vh;
+    background-color: black;
+}
+
+.student-image {
+    position: absolute;
+    width: 21vw;
+    height: 30vw;
+    top: 27%;
+    left: 16%;
+    background-color: white;
+    padding-top: 2%;
+}
+
+.student-data {
+    position: absolute;
+    font-size: 0.47rem;
+}
+
+.student-name {
+    font-size: 0.55rem;
+    top: 49.5%;
+    left: 16%;
+}
+
+.student-name-one {
+    top: 56%;
+    left: 16%;
+}
+
+.student-name-two {
+    top: 58%;
+    left: 16%;
+}
+
+.student-academ-one {
+    top: 65.3%;
+    left: 16%;
+}
+
+.student-academ-two {
+    top: 67.4%;
+    left: 16%;
+}
+
+.student-course {
+    top: 72.4%;
+    left: 16%;
+}
+
+.student-gop-one {
+    top: 65.5%;
+    left: 43.7%;
+}
+
+.student-gop-two {
+    top: 67.6%;
+    left: 43.7%
+}
+
+.student-date-app {
+    top: 72.4%;
+    left: 43.7%
+}
+
+#footer-two {
+    position: absolute;
+    bottom: 3%;
+    background-color: white;
+    padding-top: 10px;
+    border-top: 1px solid rgb(228, 228, 228)
+}
